@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Eats - Рестораны Москвы</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="lib/style2.css">
+</head>
+
+<body>
+    <!-- Навигация -->
+    <div class="container-fluid shadow-sm sticky-top bg-white background_top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand logo-link" href="#">
+                    <span class="logo"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="btn btn-outline-success py-1">Войти</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link icon-hover" href="#">
+                                <i class="bi bi-bag-plus" style="font-size: 1.4rem;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid background_main">
+        <!-- Основной контент // margin-top 5rem(80 px) 1rem==16px  m{direction}-{size} -->
+        <div class="container pt-5 pb-5">
+            <!-- Поиск -->
+            <div class="row mb-1">
+                <div class="col-12">
+                    <form class="d-flex gap-2" role="search">
+                        <input class="form-control flex-grow-1 bg-transparent" type="search"
+                            placeholder="Поиск по ресторанам и кухням" aria-label="Поиск">
+                        <button class="btn btn-outline-success" type="submit">Искать</button>
+                    </form>
+                </div>
+            </div>
+
+            <hr style="margin: 0px;">
+
+            <!-- Рестораны -->
+            <div class="row mb-2 mt-4">
+                <div class="col-12">
+                    <h1>Рестораны в Москве</h1>
+                </div>
+            </div>
+
+            <div class="row g-3">
+                <!-- Карточки ресторанов // было card col-md-4 col-sm-6 border-0 py-1 -->
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest1.jpg" class="card-img-top" alt="Макдоналдс — Газетный">
+                        <div class="card-body">
+                            <h5 class="card-title">Макдоналдс — Газетный</h5>
+                            <p class="card-text text-muted">₽₽ • Бургеры</p>
+                            <p class="card-text">25 - 35 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest2.jpg" class="card-img-top" alt="DimSum & Co — ЦДМ">
+                        <div class="card-body">
+                            <h5 class="card-title">DimSum & Co — ЦДМ</h5>
+                            <p class="card-text text-muted">₽ • Японская • Китайская • Азиатская</p>
+                            <p class="card-text">40 - 50 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest3.jpg" class="card-img-top" alt="ДвижОК — Манежная">
+                        <div class="card-body">
+                            <h5 class="card-title">ДвижОК — Манежная</h5>
+                            <p class="card-text text-muted">₽ • Американская • Европейская</p>
+                            <p class="card-text">35 - 45 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest4.jpg" class="card-img-top" alt="НЯ — NHA">
+                        <div class="card-body">
+                            <h5 class="card-title">НЯ — NHA</h5>
+                            <p class="card-text text-muted">₽₽ • Вьетнамская</p>
+                            <p class="card-text">30 - 40 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest5.jpg" class="card-img-top" alt="Точка Дзы — Цветной">
+                        <div class="card-body">
+                            <h5 class="card-title">Точка Дзы — Цветной</h5>
+                            <p class="card-text text-muted">₽₽ • Вьетнамская</p>
+                            <p class="card-text">40 - 50 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest6.jpg" class="card-img-top" alt="Cinnabon - Итальянская">
+                        <div class="card-body">
+                            <h5 class="card-title">Cinnabon - Итальянская</h5>
+                            <p class="card-text text-muted">₽ • Выпечка • Десерты • Капкейки</p>
+                            <p class="card-text">25 - 35 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest7.jpg" class="card-img-top" alt="PIZZELOVE">
+                        <div class="card-body">
+                            <h5 class="card-title">PIZZELOVE</h5>
+                            <p class="card-text text-muted">₽₽ • Пицца</p>
+                            <p class="card-text">15 - 35 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest8.jpg" class="card-img-top" alt="Zю кафе — Тверская">
+                        <div class="card-body">
+                            <h5 class="card-title">Zю кафе — Тверская</h5>
+                            <p class="card-text text-muted">₽₽ • Японская</p>
+                            <p class="card-text">20 - 35 мин</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                    <div class="card border-0 h-100">
+                        <img src="img/rest9.jpg" class="card-img-top" alt="Bar BQ Cafe — Манежная">
+                        <div class="card-body">
+                            <h5 class="card-title">Bar BQ Cafe — Манежная</h5>
+                            <p class="card-text text-muted">₽₽₽ • Европейская</p>
+                            <p class="card-text">30 - 40 мин</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid background_bottom">
+        <!-- Футер -->
+        <footer class="pt-5">
+            <div class="container pt-5">
+                <div class="row mb-4">
+                    <div class="col-12 col-md-3">
+                        <img src="img/logo_uber_eats_footer.svg" alt="Uber Eats" class="img-fluid icon-hover2"
+                            style="max-width: 200px;">
+                    </div>
+                </div>
+
+                <!-- цвет бордюра через bootstrap class -->
+                <hr class="border-2 border-white">
+
+                <div class="row py-4">
+                    <div class="col-12 col-md-4 mb-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle language-dropdown w-100" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-globe me-2"></i>Русский
+                            </button>
+                            <ul class="dropdown-menu w-100">
+                                <li><a class="dropdown-item" href="#">Китайский</a></li>
+                                <li><a class="dropdown-item" href="#">Английский</a></li>
+                            </ul>
+                        </div>
+
+                        <p class="text-light mt-3">
+                            <span class="text-success">#</span>UberEats
+                        </p>
+
+                        <div class="social-icons">
+                            <a href="#" class="text-light icon-hover me-3"><i class="bi bi-facebook"
+                                    style="font-size: 1.4rem;"></i></a>
+                            <a href="#" class="text-light icon-hover me-3"><i class="bi bi-twitter"
+                                    style="font-size: 1.4rem;"></i></a>
+                            <a href="#" class="text-light icon-hover"><i class="bi bi-instagram"
+                                    style="font-size: 1.4rem;"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <p class="text-light mb-2">Об UberEats</p>
+                        <p class="text-light mb-2">Станьте партнёром по доставке</p>
+                        <p class="text-light">Станьте парнёром-рестораном</p>
+                    </div>
+
+                    <div class="col-12 col-md-4 mb-4">
+                        <p class="text-light mb-2">Все города</p>
+                        <p class="text-light mb-2">Цены</p>
+                        <p class="text-light mb-2">Помощь</p>
+                        <p class="text-light">FAQs</p>
+                    </div>
+                </div>
+
+                <!-- цвет бордюра напрямую через style -->
+                <hr class="border-2" style="color: white;">
+
+                <div class="row py-4 text-center">
+                    <div class="col-12">
+                        <img src="img/footer_app_store.png" class="img-fluid me-3 mb-2 icon-hover2" alt="App Store"
+                            style="max-height: 40px;">
+                        <img src="img/footer_google_play.png" class="img-fluid mb-2 icon-hover2" alt="Google Play"
+                            style="max-height: 40px;">
+                    </div>
+                </div>
+
+                <hr class="border-2 border-white">
+
+                <div class="container-fluid m-1">
+                    <div class="row text-light">
+                        <div class="col-sm-4">
+                            © 2017 Uber Technologies Inc.
+                        </div>
+                        <div class="col-sm-4">
+                            Обработка персональных данных
+                        </div>
+                        <div class="col-sm-4">
+                            Пользовательское соглашение
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid p-1">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="float-end">
+                                <a href="#" class="link-primary icon-link icon-link-hover2">
+                                    <i class="bi bi-arrow-up-square-fill"
+                                        style="font-size: 3rem; color: #6dc317;"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
